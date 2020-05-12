@@ -5,6 +5,9 @@
 
 ### 
 training_1
+wait_train_images
+*.h5
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
