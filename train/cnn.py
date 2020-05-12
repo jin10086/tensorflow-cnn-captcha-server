@@ -128,16 +128,6 @@ def train(df, train_idx, valid_idx, model):
         model.save(model_file_name)
 
 
-def test_train(file):
-    im = cv2.imread(file, cv2.IMREAD_UNCHANGED)
-    im = im / 255.0
-    img = np.expand_dims(im, 0)
-    predictions_single = new_model.predict(img)
-    _label = tf.math.argmax(predictions_single, axis=-1)
-    label = "".join(map(getchat, _label[0]))
-    print(f"预测label=={label}")
-
-
 def main():
     train_idx, valid_idx, df = get_train_data()
     model = get_models()
