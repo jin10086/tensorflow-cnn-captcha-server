@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from config import DATA_DIR
+from config import DATA_DIR, image_type
 
 
 def parse_filepath(filepath):
@@ -18,7 +18,7 @@ def parse_filepath(filepath):
 
 
 def get_images():
-    files = glob.glob(os.path.join(DATA_DIR, "*.jpg"))  # 目录下所有的.jpg文件
+    files = glob.glob(os.path.join(DATA_DIR, f"*.{image_type}"))  # 目录下所有的.jpg文件
     attributes = list(map(parse_filepath, files))
     df = pd.DataFrame(attributes)
     df["file"] = files

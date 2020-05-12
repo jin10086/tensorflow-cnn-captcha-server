@@ -23,3 +23,6 @@ checkpoint_dir = os.path.dirname(checkpoint_path)
 # 到多少准确度以后就停止训练
 accuracy_rate = 0.95
 model_file_name = "mymodel.h5"
+
+# 图片后缀
+image_type = "jpg"

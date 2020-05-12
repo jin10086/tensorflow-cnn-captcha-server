@@ -2,11 +2,9 @@ from tensorflow import keras
 import cv2
 import numpy as np
 import tensorflow as tf
-import string
+from train.config import str_charts, model_file_name
 
-new_model = keras.models.load_model("mymodel.h5")
-
-str_charts = string.digits + string.ascii_letters  # 验证码里的所有字符
+new_model = keras.models.load_model(model_file_name)
 
 
 def getchat(index):
