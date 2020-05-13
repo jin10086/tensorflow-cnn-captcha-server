@@ -2,7 +2,7 @@ from tensorflow import keras
 import cv2
 import numpy as np
 import tensorflow as tf
-from train.config import str_charts, model_file_name
+from train.cnn1.config import str_charts, model_file_name
 
 new_model = keras.models.load_model(model_file_name)
 
