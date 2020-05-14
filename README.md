@@ -107,6 +107,12 @@ def test2():
     print(r.json())
 ```
 
+## 成功截图
+
+![12306识别截图](img/demo1.png)
+
+![字符类识别截图](img/demo2.png)
+
 ## 参考
 
 https://github.com/JackonYang/captcha-tensorflow
