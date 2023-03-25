@@ -2,6 +2,6 @@ pyyaml
 h5py
 numpy
 pandas
-tensorflow==2.2
+tensorflow==2.11.1
 flask-restful
 Flask-PyMongo
